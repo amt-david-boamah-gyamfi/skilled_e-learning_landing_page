@@ -1,5 +1,5 @@
 # skilled_e-learning_landing_page
-This is a static website of **Skilled e-learning landing page**.
+This is a static website of a **Skilled e-learning landing page**.
 The following bellow are some of the things this site seeks to show;
 - It shows a hover state of all the buttons.
 - It is responsive for **Mobile**, **Tablet**, and **Desktop** view.
