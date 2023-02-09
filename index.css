@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0px;
+    background-color: #F2F2F2;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+/* * {
+    border: 1px solid green;
+
+} */
+
+.white {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*************media query on h2(font-size)*****************/
+nav h2 {
+    margin-left: 5%;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 35px;
+    color: #13183F;
+}
+
+/*************media query on button(width,font-size, font-weight)*****************/
+nav button {
+    margin-right: 5%;
+    background-color: #13183F;
+    height: 50px;
+    border-radius: 50px;
+    width: 35%;
+    align-self: center;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/*********************************/
+
+nav button:hover {
+    background-color: #666CA3;
+}
+
+nav a {
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+/*******************media query of .flex_1(margin-right:0)*******************/
+.flex_1 {
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.flex_1 h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+}
+
+.flex_1 p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+/******************************media query on margin-bottom*********************/
+.flex_1 button {
+    background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
+    height: 50px;
+    border-radius: 50px;
+    width: 45%;
+    align-self: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    border-color: #F02AA6;
+    margin-top: 24px;
+    margin-bottom: 46px;
+}
+
+.flex_1 button:hover {
+    background: #FFA7C3;
+}
+
+.flex_1 a {
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+
+.grid {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    row-gap: 40px;
+    grid-template-rows: 289px;
+
+}
+
+.grid h3 {
+
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    padding: 10% 10%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
+}
+
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    height: aut0;
+}
+
+.grid img {
+    padding-left: 10%;
+    position: relative;
+    bottom: 25px;
+}
+
+.grid h4 {
+    margin-top: 0px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    padding-left: 10%;
+
+}
+
+.grid p {
+    padding-left: 10%;
+    padding-right: 3%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #83869A;
+}
+
+.hover {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.grid a {
+    text-decoration: none;
+    color: #F74780;
+}
+
+.grid a:hover {
+    color: #FFA7C3;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13183F;
+    height: 120px;
+    margin-top: 80px;
+}
+
+
+footer h2 {
+    margin-left: 5%;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
+
+}
+
+/*************media query on button(width,font-size, font-weight)*****************/
+footer button {
+    margin-right: 5%;
+    background: linear-gradient(to bottom, #4851FF 20%, #F02AA6 80%);
+    border-color: #4851FF;
+    height: 50px;
+    border-radius: 50px;
+    width: 35%;
+    align-self: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+footer button:hover {
+    background: #FFA7C3;
+}
+
+footer a {
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 376px) {
+
+    /*************media query on h2(font-size)*****************/
+    nav h2 {
+        font-size: 28px;
+        margin-left: 10%;
+    }
+
+    /*************media query on button(width,font-size, font-weight)*****************/
+    nav button {
+        font-size: 16px;
+        font-weight: 700;
+        width: 28%;
+        margin-right: 10%;
+    }
+
+    /*********************************/
+    .flex {
+        display: flex;
+        align-items: center;
+        height: 600px;
+    }
+
+    .flex_1 {
+        margin-right: 0%;
+        margin-left: 10%;
+        width: 100%
+    }
+
+    .flex img {
+        position: relative;
+        width: 450px;
+        height: 780px;
+        left: 10px;
+        bottom: 90px;
+
+    }
+
+    .overflow {
+        margin-right: 0%;
+        overflow: hidden;
+    }
+
+    .grid {
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+
+    footer button {
+        font-size: 16px;
+        font-weight: 700;
+        width: 2%;
+    }
+
+    footer button {
+        margin-right: 10%;
+        width: 28%;
+
+
+    }
+
+    footer h2 {
+        font-size: 28px;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 769px) {
+    nav h2 {
+        margin-left: 10%;
+    }
+
+    /*************media query on button(width,font-size, font-weight)*****************/
+    nav button {
+
+        width: 14%;
+        margin-right: 10%;
+    }
+
+    /*********************************/
+    .flex {
+
+        justify-content: space-between;
+    }
+
+    .flex_1 {
+        margin-right: 0%;
+        margin-left: 10%;
+        width: 410px
+    }
+
+    .flex img {
+        position: relative;
+        width: 720px;
+        height: 880px;
+        left: 279px;
+        bottom: 100px;
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+
+    }
+
+    .hover {
+        margin-top: 10px;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    footer button {
+        font-size: 16px;
+        font-weight: 700;
+        width: 2%;
+    }
+
+    footer button {
+        width: 14%;
+        font-size: 16px;
+    }
+
+   
+}
