@@ -3,25 +3,25 @@
 body {
     margin: 0%;
     padding: 0px;
-    background-color: #F2F2F2;
+    background-image: linear-gradient(white 45%, #F0F1FF 65%);
     font-family: 'Plus Jakarta Sans', sans-serif;
 
 }
 
 /* * {
-    border: 1px solid green;
-
+    border: 1px solid red;
 } */
 
-.white {
+/* .white {
     background-color: white;
-}
+} */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 
 /*************media query on h2(font-size)*****************/
@@ -39,9 +39,10 @@ nav button {
     background-color: #13183F;
     height: 50px;
     border-radius: 50px;
+    border: 0;
     width: 35%;
     align-self: center;
-
+    cursor: pointer;
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
@@ -84,7 +85,7 @@ nav a {
     background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
     height: 50px;
     border-radius: 50px;
-    width: 45%;
+    width: 40%;
     align-self: center;
     font-weight: 600;
     font-size: 15px;
@@ -92,10 +93,13 @@ nav a {
     border-color: #F02AA6;
     margin-top: 24px;
     margin-bottom: 46px;
+    border: 0;
+    cursor: pointer;
 }
 
 .flex_1 button:hover {
     background: #FFA7C3;
+
 }
 
 .flex_1 a {
@@ -103,6 +107,13 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+/* .overflow {
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+
 
 
 .grid {
@@ -116,13 +127,13 @@ nav a {
 
 .grid .h3 {
     background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 
 
 .grid h3 {
-margin-bottom: 0;
+    margin-bottom: 0;
     margin-top: 18px;
     font-weight: 800;
     font-size: 24px;
@@ -130,7 +141,7 @@ margin-bottom: 0;
     color: white;
     padding: 10%;
     border-radius: 10px;
-    
+
 }
 
 
@@ -171,6 +182,9 @@ margin-bottom: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
+    /* position: relative;
+    top: 10px;
+    bottom: 10px; */
 }
 
 .grid a {
@@ -190,6 +204,7 @@ footer {
     background-color: #13183F;
     height: 120px;
     margin-top: 80px;
+
 }
 
 
@@ -214,6 +229,8 @@ footer button {
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
+    border: 0;
+    cursor: pointer;
 }
 
 footer button:hover {
@@ -226,7 +243,7 @@ footer a {
     color: white;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 481px) {
 
     /*************media query on h2(font-size)*****************/
     nav h2 {
@@ -238,7 +255,7 @@ footer a {
     nav button {
         font-size: 16px;
         font-weight: 700;
-        width: 28%;
+        width: 23%;
         margin-right: 10%;
         z-index: 2;
     }
@@ -248,32 +265,48 @@ footer a {
         display: flex;
         align-items: center;
         height: 600px;
+        
+        
     }
 
     .flex_1 {
         margin-right: 0%;
         margin-left: 10%;
-        width: 100%
+        width: 100%;
+        
+    }
+
+    .flex_1 h1 {
+        font-size: 30px;
+    }
+
+    .flex_1 button {
+        width: 40%;
+    }
+
+
+    .overflow {
+        margin-right: 0%;
+        margin-left: 0;
+      
+        overflow: hidden;
+        z-index: 1;
     }
 
     .flex img {
         position: relative;
         width: 450px;
         height: 780px;
-        left: 10px;
+        left: 10px; 
         bottom: 90px;
-
+       
     }
 
-    .overflow {
-        margin-right: 0%;
-        overflow: hidden;
-        z-index: 1;
-    }
+
 
     .grid {
         display: grid;
-        column-gap: 10px;
+        column-gap: 30px;
         grid-template-columns: repeat(2, 1fr);
         margin-left: 10%;
         margin-right: 10%;
@@ -295,7 +328,7 @@ footer a {
 
     footer button {
         margin-right: 10%;
-        width: 28%;
+        width: 23%;
 
 
     }
@@ -306,7 +339,7 @@ footer a {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
     nav h2 {
         margin-left: 10%;
     }
@@ -314,7 +347,7 @@ footer a {
     /*************media query on button(width,font-size, font-weight)*****************/
     nav button {
 
-        width: 14%;
+        width: 13%;
         margin-right: 10%;
     }
 
@@ -342,7 +375,7 @@ footer a {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;
+        column-gap: 30px;
 
     }
 
@@ -361,9 +394,9 @@ footer a {
     }
 
     footer button {
-        width: 14%;
+        width: 13%;
         font-size: 16px;
     }
 
-   
+
 }
