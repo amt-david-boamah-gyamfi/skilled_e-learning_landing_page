@@ -1,149 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
-
 body {
+    background: linear-gradient(white 45%, #F0F1FF 65%);
     margin: 0%;
     padding: 0px;
-    background-image: linear-gradient(white 45%, #F0F1FF 65%);
     font-family: 'Plus Jakarta Sans', sans-serif;
-
 }
 
-/* * {
-    border: 1px solid red;
-} */
-
-/* .white {
-    background-color: white;
-} */
-
+/**********************************Nav Bar*********************/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-
-/*************media query on h2(font-size)*****************/
-nav h2 {
-    margin-left: 5%;
+nav p {
+    font-size: 28px;
     font-weight: 800;
-    font-size: 25px;
     line-height: 35px;
-    color: #13183F;
+    margin-left: 5%;
 }
 
-/*************media query on button(width,font-size, font-weight)*****************/
 nav button {
-    margin-right: 5%;
-    background-color: #13183F;
-    height: 50px;
+    padding: 20px 24px;
     border-radius: 50px;
     border: 0;
-    width: 35%;
-    align-self: center;
     cursor: pointer;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 28px;
+    background-color: #13183F;
+    margin-right: 5%;
+    z-index: 2;
 }
-
-/*********************************/
 
 nav button:hover {
     background-color: #666CA3;
 }
 
 nav a {
-    padding: 1%;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
     color: white;
 }
 
-/*******************media query of .flex_1(margin-right:0)*******************/
-.flex_1 {
+/**********************************flex******************************/
+.flex {
     margin-left: 5%;
-    margin-right: 5%
+    margin-right: 5%;
 }
 
-.flex_1 h1 {
-    font-weight: 800;
+.flex h1 {
     font-size: 40px;
+    font-weight: 800;
     line-height: 50px;
-    color: #13183F;
+    letter-spacing: 0px;
 }
 
-.flex_1 p {
-    font-weight: 500;
+.flex p {
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
     color: #83869A;
 }
 
-/******************************media query on margin-bottom*********************/
-.flex_1 button {
-    background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
-    height: 50px;
+.flex button {
+    padding: 15px 30px;
     border-radius: 50px;
-    width: 40%;
-    align-self: center;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 28px;
-    border-color: #F02AA6;
-    margin-top: 24px;
-    margin-bottom: 46px;
     border: 0;
     cursor: pointer;
-}
-
-.flex_1 button:hover {
-    background: #FFA7C3;
-
-}
-
-.flex_1 a {
-    padding: 1%;
-    text-decoration: none;
-    color: white;
-}
-
-/* .overflow {
-    margin-left: 5%;
+    background: linear-gradient(#FF6F48 25%, #F02AA6 75%);
     margin-right: 5%;
-} */
+}
 
+.flex button:hover {
+    background: #FFA7C3;
+}
 
+.flex a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+    line-height: 26px;
+}
 
+.flex img {
+    
+    padding-top: 36px;
+}
 
+/**********************************grid***********************************/
 .grid {
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
     row-gap: 40px;
-    /* grid-template-rows: 289px; */
-
 }
 
 .grid .h3 {
     background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
     border-radius: 10px;
-}
-
-
-
-.grid h3 {
-    margin-bottom: 0;
-    margin-top: 18px;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
+    padding: 4px 0px 4px 10%;
     color: white;
-    padding: 10%;
-    border-radius: 10px;
-
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0px;
 }
-
 
 .box {
     margin-top: 0;
@@ -170,21 +135,19 @@ nav a {
 
 .grid p {
     padding-left: 10%;
-    padding-right: 3%;
+    padding-right: 5%;
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
     color: #83869A;
+    line-height: 26px;
+    letter-spacing: 0px;
 }
 
 .hover {
-    margin-top: 24px;
+    padding: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    /* position: relative;
-    top: 10px;
-    bottom: 10px; */
 }
 
 .grid a {
@@ -196,7 +159,7 @@ nav a {
     color: #FFA7C3;
 }
 
-
+/********************************footer******************************/
 footer {
     display: flex;
     justify-content: space-between;
@@ -204,199 +167,131 @@ footer {
     background-color: #13183F;
     height: 120px;
     margin-top: 80px;
-
 }
 
-
-footer h2 {
-    margin-left: 5%;
+footer p {
+    font-size: 28px;
     font-weight: 800;
+    line-height: 35px;
+    margin-left: 5%;
     font-size: 25px;
     line-height: 35px;
     color: white;
-
 }
 
-/*************media query on button(width,font-size, font-weight)*****************/
 footer button {
-    margin-right: 5%;
-    background: linear-gradient(to bottom, #4851FF 20%, #F02AA6 80%);
     border-color: #4851FF;
-    height: 50px;
+    padding: 20px 24px;
     border-radius: 50px;
-    width: 35%;
-    align-self: center;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 28px;
     border: 0;
     cursor: pointer;
+    background: linear-gradient(to bottom, #4851FF 20%, #F02AA6 80%);
+    margin-right: 5%;
 }
 
 footer button:hover {
-    background: #FFA7C3;
+    background: #f8a9f3;
 }
 
 footer a {
-    padding: 1%;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
     color: white;
 }
 
+/****************************media query for Tablet******************************/
 @media (min-width: 481px) {
 
-    /*************media query on h2(font-size)*****************/
-    nav h2 {
-        font-size: 28px;
-        margin-left: 10%;
-    }
-
-    /*************media query on button(width,font-size, font-weight)*****************/
-    nav button {
-        font-size: 16px;
-        font-weight: 700;
-        width: 23%;
-        margin-right: 10%;
-        z-index: 2;
-    }
-
-    /*********************************/
+    /**********************************flex******************************/
     .flex {
-        display: flex;
+        margin-right: 0%;
+        display: grid;
         align-items: center;
-        height: 600px;
-        
-        
-    }
-
-    .flex_1 {
-        margin-right: 0%;
-        margin-left: 10%;
-        width: 100%;
-        
-    }
-
-    .flex_1 h1 {
-        font-size: 30px;
-    }
-
-    .flex_1 button {
-        width: 40%;
-    }
-
-
-    .overflow {
-        margin-right: 0%;
-        margin-left: 0;
-      
+        grid-template-columns: 50% 70%;
         overflow: hidden;
+        position: relative;
+        bottom: 100px;
         z-index: 1;
     }
 
-    .flex img {
-        position: relative;
-        width: 450px;
-        height: 780px;
-        left: 10px; 
-        bottom: 90px;
-       
+    .flex .left {
+        width: 100%;
     }
 
+    .flex .image {
+        content: url(./assets/image-hero-tablet@2x.webp);
+        width: 100%;
+        height: 600px;
+        object-fit: contain;
+        position: relative;
+        left: 40px;
+        right: 90px;
+        bottom: 40px;
 
+    }
 
+    /**********************************grid***********************************/
     .grid {
-        display: grid;
-        column-gap: 30px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 10%;
-        margin-right: 10%;
-        height: auto;
-        /* grid-template-rows: 278px; */
 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
     }
 
     .grid .h3 {
-        height: auto;
+        padding: 30px 0px 4px 10%;
     }
 
+    .grid a {
 
-    footer button {
+        font-weight: 800;
         font-size: 16px;
-        font-weight: 700;
-        width: 2%;
-    }
-
-    footer button {
-        margin-right: 10%;
-        width: 23%;
-
-
-    }
-
-    footer h2 {
-        font-size: 28px;
-        margin-left: 10%;
     }
 }
 
-@media (min-width: 770px) {
-    nav h2 {
+@media (min-width: 769px) {
+
+    nav p {
         margin-left: 10%;
     }
 
-    /*************media query on button(width,font-size, font-weight)*****************/
     nav button {
-
-        width: 13%;
         margin-right: 10%;
     }
 
-    /*********************************/
     .flex {
-
-        justify-content: space-between;
-    }
-
-    .flex_1 {
-        margin-right: 0%;
         margin-left: 10%;
-        width: 410px
     }
 
-    .flex img {
-        position: relative;
-        width: 720px;
-        height: 880px;
-        left: 279px;
-        bottom: 100px;
+    .flex .left {
 
+        width: 70%;
     }
 
+
+
+    /**********************************grid***********************************/
     .grid {
+        margin-left: 10%;
+        margin-right: 10%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-
+        column-gap: 40px;
     }
 
-    .hover {
-        margin-top: 10px;
+    .grid p {
+        padding-left: 10%;
+        padding-right: 5px
     }
 
-    .box {
-        height: auto;
-    }
-
-    footer button {
-        font-size: 16px;
-        font-weight: 700;
-        width: 2%;
+    footer p {
+        margin-left: 10%;
     }
 
     footer button {
-        width: 13%;
-        font-size: 16px;
+        margin-right: 10%;
     }
-
-
 }
